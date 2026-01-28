@@ -1,16 +1,29 @@
-# Python
+# Bytes-compiled / optimized / DLL files
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# Virtual environments
+# Virtual Environments
 venv/
 myenv/
 .env/
+env/
+ENV/
+.venv/
 
-# Data & results
+# Streamlit
+.streamlit/config.toml
+.streamlit/secrets.toml
 
+# IDEs
+.vscode/
+.idea/
 
+# Data & Results
+results/
+*.csv
+*.xlsx
 
 # OS junk
 .DS_Store
