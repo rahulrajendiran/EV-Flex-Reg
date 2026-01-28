@@ -5,7 +5,7 @@ scikit-learn
 lightgbm
 joblib
 streamlit
-altair
+altair<5
 kagglehub
 plotly
 xlsxwriter
