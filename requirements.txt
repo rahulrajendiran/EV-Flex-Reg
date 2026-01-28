@@ -4,7 +4,7 @@ matplotlib
 scikit-learn
 lightgbm
 joblib
-streamlit
+streamlit>=1.40.1
 altair<5
 kagglehub
 plotly
