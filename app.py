@@ -224,7 +224,12 @@ def sidebar_controls():
     st.sidebar.title("Navigation")
     page = st.sidebar.radio(
         "Choose View",
-        ["Dataset Forecast", "Manual Forecast", "Time-Series Forecast"]
+        [
+            "Dataset Forecast",
+            "Manual Forecast",
+            "Time-Series Forecast",
+            "Judge Feedback"
+        ]
     )
     st.sidebar.markdown("---")
     
@@ -712,6 +717,23 @@ def main():
 
     elif page == "Time-Series Forecast":
         render_timeseries_page(df)
+
+    elif page == "Judge Feedback":
+
+        st.subheader("📝 Project Feedback Form")
+        st.markdown(
+            "Thank you for taking the time to evaluate our project. "
+            "Your feedback is valuable for academic improvement."
+        )
+
+        form_url = "https://docs.google.com/forms/d/e/1FAIpQLSf7mv1CvwfP8mGVkvGKTrHI3d7CS1vNzvK8-cKxrUoj1aB28w/viewform?usp=header"
+
+        st.components.v1.iframe(
+            src=form_url,
+            width=900,
+            height=900,
+            scrolling=True
+        )
 
 if __name__ == "__main__":
     main()
